@@ -35,6 +35,7 @@ function getHumanChoice() {
 
 }
 
+// plays the round
 function playRound() {
     function winMsg() {
         console.log(human + " beats " + comp + ". You win!")
@@ -66,10 +67,7 @@ Computer : ${computerScore}
 Ties : ${ties}`)
 }
 
-function ulti() {
-    console.log("AAAARG")
-}
-
+// main function, playgame(rounds), automatically set to 1 if () empty
 function playGame(rounds = 1) {
     for (let games = 0; games < rounds; games++) {
         playRound()
